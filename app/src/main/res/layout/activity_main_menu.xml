@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000000">
+
+  <ImageView
+    android:id="@+id/logo"
+    android:layout_width="508dp"
+    android:layout_height="801dp"
+    android:layout_marginBottom="80dp"
+    android:contentDescription="@string/logo_description"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/logo" />
+
+  <Button
+    android:id="@+id/bioButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:text="@string/bio_button_text"
+    android:textColor="@color/greyTextColor"
+    android:textColorLink="#8A8A8A"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/contactButton"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+  <Button
+    android:id="@+id/tutorialButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:text="@string/tutorials_button_text"
+    android:textColor="@color/greyTextColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/faqButton"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/contactButton"
+    app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+  <Button
+    android:id="@+id/faqButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:text="@string/faqs_button_text"
+    android:textColor="@color/greyTextColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/tutorialButton"
+    app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+  <Button
+    android:id="@+id/contactButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:text="@string/contact_button_text"
+    android:textColor="@color/greyTextColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/tutorialButton"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/bioButton"
+    app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

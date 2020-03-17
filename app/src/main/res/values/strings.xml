@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Star Sailor Apps</string>
+  <string name="logo_description">Star Sailor Apps logo</string>
+  <string name="bio_button_text">BIO</string>
+  <string name="contact_button_text">CONTACT</string>
+  <string name="tutorials_button_text">TUTORIALS</string>
+  <string name="faqs_button_text">FAQs</string>
+</resources>
